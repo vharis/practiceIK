@@ -1,0 +1,170 @@
+import numpy as np
+
+# arr = np.random.randint(1, 101, 60).reshape(3, -1)
+# print (arr)
+
+
+# matrix = np.eye(4)
+# result = np.diagonal(matrix)
+# print(result)
+
+
+
+# A = np.array([[1, 2,5], [3, 4,6], [7,8,9]])
+# print (A)
+# B = A.T
+# print (B)
+# A = B.T
+# print (A)
+
+
+# array1 = np.array([[1, 2], [3, 4]])
+# array2 = np.array([[5, 6], [7, 8]])
+# result = np.concatenate((array1, array2), axis=1)
+# print (result)
+
+# result1 = np.hstack((array1, array2))
+# print (result1)
+
+
+# A = np.array([10,20,30,40])
+# mask = (A>=20) & (A<=30)
+# B = A[mask]
+# print(B)
+
+# arr = np.arange(1,10).reshape(3,3)
+# r =np.trace(arr)
+# print (r )
+
+
+# matrix = np.random.randint(1,101, size=(5,5))
+# print ('mean', np.mean(matrix) )
+# print ('mean', np.std(matrix) )
+
+
+# import numpy  as np
+
+# matrix = np.random.randint(1,10, size=(5,5))
+
+# print (matrix)
+
+# scalar =5
+
+# matrix2 = matrix +5
+
+# print (matrix2)
+
+# matrix3 = np.random.randint(1,10, size=(5,1))
+
+# print (matrix3)
+
+# matrix4 = matrix2 * matrix3
+
+# print (matrix4)
+
+
+
+# import numpy as np
+
+
+
+# mat1 = np.random.randint(1,101, size=(3,3))
+
+# mat2 = np.random.randint(1,101, size=(3,3))
+
+# mat3 = mat1*mat2
+
+# print (mat3)
+
+
+
+
+# import numpy as np
+
+# arr = np.random.randint(1,11, size=10)
+
+# print(arr)
+# cum_sum = np.cumsum(arr)
+# print(sum(arr))
+
+# print (cum_sum[9])
+
+# print (arr[99])
+
+# print (arr[499])
+
+
+
+# import numpy as np
+
+# mat = np.random.randint(1,1001, size=(10,10))
+# print(mat)
+# print("min_val",np.min(mat))
+# print("max_val", np.max(mat))
+# print("min_index", np.argmin(mat))
+# print("max_index", np.argmax(mat))
+# min_index = np.unravel_index(np.argmin(mat), mat.shape)
+# max_index = np.unravel_index(np.argmax(mat), mat.shape)
+# print("min_index", min_index)
+# print("max_index", max_index)
+
+
+
+# import numpy as np
+
+# mat = np.random.rand(5,5)
+
+# print (mat)
+# minVal =np.min(mat)
+# print (minVal)
+# maxVal =np.max(mat)
+# print (maxVal)
+# index_min = np.argmin(mat)
+# index_max = np.argmax(mat)
+# print("min_index", np.argmin(mat))
+# print("max_index", np.argmax(mat))
+# mat2 = np.copy(mat)
+# mat2[index_max]=0
+# print(mat2)
+
+# A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# B = A[1:3, 0:2]
+
+# print (B)
+
+# import numpy as np
+
+# arr = np.random.randint(1,100, size=20)
+# print (arr)
+# count_even=0
+
+# for elt in arr:
+#     print ("element", elt)
+#     if (elt%2) == 0 :
+#         count_even = count_even+1
+#     else:
+#         continue
+# print ("even =", count_even)
+# print ("odd =", (arr.size - count_even))
+
+
+
+
+import pandas as pd
+
+data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+
+df = pd.DataFrame(data)
+
+df.at[1, 'B']
+
+
+import numpy as np 
+# Create an 8x8 array initialized to 0 
+array = np.zeros((8, 8), dtype=int) 
+# Set the outer border elements to 1 
+array[0, :] = 1 # Top border 
+array[-1, :] = 1 # Bottom border 
+array[:, 0] = 1 # Left border 
+array[:, -1] = 1 # Right border

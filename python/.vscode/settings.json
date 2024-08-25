@@ -1,0 +1,11 @@
+{
+    "terminal.sourceControlRepositoriesKind": "both",
+    "terminal.integrated.automationProfile.linux": {},
+    "terminal.integrated.ignoreProcessNames": [
+        "starship",
+        "oh-my-posh",
+        "bash",
+        "zsh",
+        "git bash"
+    ]
+}
